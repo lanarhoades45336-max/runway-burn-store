@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lanarhoades45336-max.github.io/runway-burn-store/sitemap.xml
