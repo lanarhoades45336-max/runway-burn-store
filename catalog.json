@@ -1,7 +1,7 @@
 [
   {
     "name": "Runway & Burn Kit",
-    "price": 0.00812,
+    "price": 0.006,
     "deliverable": "products/survival-store-kit",
     "description": "Two dependency-free tools to measure your money runway and cut recurring costs.",
     "price_usd": 19.0
