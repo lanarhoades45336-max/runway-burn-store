@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Runway &amp; Burn Kit — Runway &amp; Burn</title>
+<meta name="description" content="Two dependency-free tools to measure your money runway and cut recurring costs.">
+<link rel="canonical" href="https://lanarhoades45336-max.github.io/runway-burn-store/runway---burn-kit.html">
+<meta property="og:type" content="product">
+<meta property="og:title" content="Runway &amp; Burn Kit — Runway &amp; Burn">
+<meta property="og:description" content="Two dependency-free tools to measure your money runway and cut recurring costs.">
+<meta property="og:url" content="https://lanarhoades45336-max.github.io/runway-burn-store/runway---burn-kit.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Runway &amp; Burn Kit — Runway &amp; Burn">
+<meta name="twitter:description" content="Two dependency-free tools to measure your money runway and cut recurring costs.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Runway & Burn Kit","description":"Two dependency-free tools to measure your money runway and cut recurring costs.","url":"https://lanarhoades45336-max.github.io/runway-burn-store/runway---burn-kit.html","offers":{"@type":"Offer","price":"19.00","priceCurrency":"USD","availability":"https://schema.org/InStock"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b0c0e; --bg2:#101216; --panel:#141619; --panel2:#191c21;
+  --ink:#f3eee4; --muted:#8f8b82; --faint:#5d5a54;
+  --line:rgba(243,238,228,.10); --line2:rgba(243,238,228,.18);
+  --accent:#ff7a45; --accent2:#ffd166; --good:#7ee0a8; --warn:#ffcf5c; --bad:#ff6b6b;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --sans:"IBM Plex Sans",system-ui,sans-serif;
+  --disp:"Fraunces",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(60vw 55vh at 85% -8%, rgba(255,122,69,.16), transparent 60%),
+    radial-gradient(50vw 50vh at -5% 20%, rgba(255,209,102,.07), transparent 55%),
+    linear-gradient(180deg,#0b0c0e, #0a0b0d 60%, #0b0c0e);}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+.wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 24px}
+a{color:var(--ink)}
+.mono{font-family:var(--mono)}
+.muted{color:var(--muted)}
+
+/* nav */
+nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);
+  background:rgba(11,12,14,.72);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.brand{font-family:var(--mono);font-weight:600;letter-spacing:.14em;font-size:12px;
+  text-transform:uppercase;color:var(--ink);text-decoration:none;display:flex;gap:10px;align-items:center}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(255,122,69,.6);
+  animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,122,69,.5)}70%{box-shadow:0 0 0 9px rgba(255,122,69,0)}100%{box-shadow:0 0 0 0 rgba(255,122,69,0)}}
+.chip{font-family:var(--mono);font-size:12px;border:1px solid var(--line2);border-radius:999px;
+  padding:6px 13px;color:var(--ink);text-decoration:none;letter-spacing:.02em;transition:.2s}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+
+/* hero */
+header{padding:76px 0 40px;position:relative}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent2);margin:0 0 22px;display:flex;gap:12px;align-items:center}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--accent2);display:inline-block}
+h1{font-family:var(--disp);font-weight:300;font-size:clamp(44px,8.4vw,96px);line-height:.94;
+  letter-spacing:-.02em;margin:0 0 26px;font-optical-sizing:auto}
+h1 em{font-style:italic;font-weight:600;color:var(--accent)}
+.lede{font-family:var(--disp);font-size:clamp(19px,2.4vw,24px);line-height:1.45;font-weight:300;
+  color:#d9d4c9;max-width:56ch;margin:0 0 34px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{font-family:var(--mono);font-size:13px;letter-spacing:.04em;text-decoration:none;
+  padding:14px 22px;border-radius:10px;transition:.22s;border:1px solid transparent;cursor:pointer}
+.btn-primary{background:var(--accent);color:#1a0f08;font-weight:600}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line2);color:var(--ink)}
+.btn-ghost:hover{border-color:var(--ink)}
+.hero-meta{margin-top:30px;font-family:var(--mono);font-size:12px;color:var(--faint);
+  letter-spacing:.04em;display:flex;gap:20px;flex-wrap:wrap}
+.hero-meta b{color:var(--muted);font-weight:500}
+
+/* runway calculator */
+.tool{margin:64px 0;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  background:linear-gradient(180deg,var(--panel),#0e1013)}
+.tool-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;
+  padding:22px 26px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tool-head h2{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  margin:0;color:var(--muted);font-weight:500}
+.free{font-family:var(--mono);font-size:11px;color:var(--good);border:1px solid rgba(126,224,168,.35);
+  border-radius:999px;padding:4px 11px;letter-spacing:.08em}
+.tool-body{display:grid;grid-template-columns:1.05fr .95fr;gap:0}
+@media(max-width:760px){.tool-body{grid-template-columns:1fr}}
+.controls{padding:26px}
+.field{margin-bottom:20px}
+.field label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.field .row{display:flex;align-items:center;gap:12px}
+.field input[type=number]{flex:1;background:#0a0b0d;border:1px solid var(--line2);border-radius:9px;
+  color:var(--ink);font-family:var(--mono);font-size:17px;padding:11px 13px;width:100%}
+.field input:focus{outline:none;border-color:var(--accent)}
+.field input[type=range]{flex:1;accent-color:var(--accent)}
+.field output{font-family:var(--mono);font-size:13px;color:var(--muted);min-width:74px;text-align:right}
+.result{padding:26px;border-left:1px solid var(--line);background:var(--bg2);
+  display:flex;flex-direction:column;justify-content:center}
+@media(max-width:760px){.result{border-left:none;border-top:1px solid var(--line)}}
+.result .k{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.runway-num{font-family:var(--disp);font-weight:300;font-size:clamp(52px,9vw,86px);line-height:1;
+  margin:8px 0 2px;letter-spacing:-.02em}
+.runway-num span{font-size:.34em;font-family:var(--mono);color:var(--muted);letter-spacing:.02em;margin-left:8px}
+.status{margin-top:16px;font-family:var(--mono);font-size:12.5px;padding:9px 13px;border-radius:9px;
+  display:inline-block;letter-spacing:.02em}
+.s-good{background:rgba(126,224,168,.10);color:var(--good);border:1px solid rgba(126,224,168,.30)}
+.s-warn{background:rgba(255,207,92,.10);color:var(--warn);border:1px solid rgba(255,207,92,.30)}
+.s-bad{background:rgba(255,107,107,.10);color:var(--bad);border:1px solid rgba(255,107,107,.32)}
+.track{margin-top:22px;height:8px;border-radius:99px;background:#0a0b0d;border:1px solid var(--line);overflow:hidden}
+.track i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent2));
+  width:0;transition:width .5s cubic-bezier(.2,.8,.2,1)}
+.track-cap{font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:9px;letter-spacing:.03em}
+
+/* sections */
+section{padding:34px 0}
+h2.sec{font-family:var(--disp);font-weight:300;font-size:clamp(30px,4.6vw,50px);letter-spacing:-.015em;
+  margin:0 0 8px;line-height:1.02}
+h2.sec em{font-style:italic;color:var(--accent2);font-weight:500}
+.sec-lede{color:var(--muted);max-width:60ch;margin:0 0 40px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:820px){.grid{grid-template-columns:1fr}}
+.card2{border:1px solid var(--line);border-radius:14px;padding:24px;background:var(--panel);
+  transition:.24s;position:relative;overflow:hidden}
+.card2:hover{border-color:var(--line2);transform:translateY(-3px)}
+.card2 .n{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.1em}
+.card2 h3{font-family:var(--disp);font-weight:400;font-size:22px;margin:14px 0 8px}
+.card2 p{margin:0;color:var(--muted);font-size:15.5px}
+.card2 pre{font-family:var(--mono);font-size:12.5px;background:#0a0b0d;border:1px solid var(--line);
+  border-radius:9px;padding:13px;overflow:auto;color:#cfc9bd;margin:14px 0 0}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:2px}
+.step{display:grid;grid-template-columns:56px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .idx{counter-increment:s;font-family:var(--mono);font-size:13px;color:var(--accent2);padding-top:5px}
+.step .idx::before{content:"0" counter(s)}
+.step h3{font-family:var(--disp);font-weight:400;font-size:22px;margin:0 0 6px}
+.step p{margin:0;color:var(--muted);font-size:15.5px;max-width:62ch}
+
+/* checkout */
+.checkout{margin:26px 0 10px;border:1px solid var(--line2);border-radius:18px;overflow:hidden;
+  background:linear-gradient(180deg,var(--panel2),#0e1013)}
+.checkout-head{display:flex;justify-content:space-between;align-items:center;padding:22px 26px;
+  border-bottom:1px solid var(--line);flex-wrap:wrap;gap:12px}
+.checkout-head h2{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;
+  margin:0;color:var(--muted);font-weight:500}
+.bigprice{font-family:var(--disp);font-weight:300;font-size:clamp(34px,6vw,52px);letter-spacing:-.02em}
+.bigprice small{font-family:var(--mono);font-size:.3em;color:var(--muted);display:block;letter-spacing:.04em;margin-top:6px}
+.checkout-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+@media(max-width:760px){.checkout-body{grid-template-columns:1fr}}
+.co-col{padding:26px}
+.co-col+.co-col{border-left:1px solid var(--line)}
+@media(max-width:760px){.co-col+.co-col{border-left:none;border-top:1px solid var(--line)}}
+.co-label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.coins{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.coin{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:#0a0b0d}
+.coin-tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--accent2);
+  border:1px solid rgba(255,209,102,.28);border-radius:6px;padding:3px 8px;min-width:58px;text-align:center}
+.coin-amt{font-family:var(--mono);font-size:14px;font-weight:500}
+.coin-note{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--faint)}
+.scan-hint{margin:22px 0 12px;color:var(--muted);font-size:13px}
+.scans{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.scan{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:12px;padding:14px;background:#0a0b0d;transition:.24s}
+.scan:hover{border-color:var(--accent);transform:translateY(-2px)}
+.scan .qr{background:#fff;border-radius:8px;padding:8px;line-height:0}
+.scan .qr svg{width:118px;height:118px;display:block}
+.scan-tag{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--accent2);text-transform:uppercase}
+.scan-amt{font-family:var(--mono);font-size:13px;font-weight:500;text-align:center}
+.addrbox{display:flex;gap:10px;align-items:stretch}
+.addrbox code{flex:1;font-family:var(--mono);font-size:13px;background:#0a0b0d;border:1px solid var(--line2);
+  border-radius:10px;padding:13px 14px;word-break:break-all;color:#e9e3d8}
+.copy{font-family:var(--mono);font-size:12px;border:1px solid var(--line2);background:transparent;color:var(--ink);
+  border-radius:10px;padding:0 16px;cursor:pointer;transition:.2s;white-space:nowrap}
+.copy:hover{border-color:var(--accent);color:var(--accent)}
+.deliv-url{margin:16px 0 6px;font-family:var(--mono);font-size:12.5px;word-break:break-all}
+.deliv-url a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(255,122,69,.4)}
+.deliv-url a:hover{border-bottom-color:var(--accent)}
+
+/* faq */
+.faq{display:grid;gap:0;margin-top:8px}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-family:var(--disp);font-size:19px;font-weight:400;list-style:none;
+  display:flex;justify-content:space-between;gap:16px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--mono);color:var(--accent);font-size:20px;transition:.2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin:12px 0 0;max-width:70ch;font-size:15.5px}
+
+footer{margin-top:70px;padding:40px 0 60px;border-top:1px solid var(--line);
+  font-family:var(--mono);font-size:12px;color:var(--faint);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <a class="brand" href="./"><span class="dot"></span>Runway&amp;Burn</a>
+  <a class="chip" href="#checkout">US$ 19.00</a>
+</div></nav>
+
+<header><div class="wrap">
+  <p class="eyebrow">Runway &amp; burn toolkit</p>
+  <h1>Know exactly how long your <em>money lasts.</em></h1>
+  <p class="lede">Two small, dependency-free tools that turn a bank balance and a
+  list of subscriptions into one honest number: your runway. No account, no telemetry,
+  no lock-in.</p>
+  <div class="cta">
+    <a class="btn btn-primary" href="#checkout">Get the kit — US$ 19.00</a>
+    <a class="btn btn-ghost" href="#tool">Try the runway calculator ↓</a>
+    <button class="btn btn-ghost" id="shareBtn" type="button">Share this</button>
+  </div>
+  <div class="hero-meta">
+    <span><b>Delivery</b> instant, on-chain</span>
+    <span><b>Format</b> two scripts, no deps</span>
+    <span><b>Pay in</b> native · USDC · USDT</span>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <div class="tool reveal" id="tool">
+    <div class="tool-head">
+      <h2>Runway calculator</h2>
+      <span class="free">free · runs in your browser</span>
+    </div>
+    <div class="tool-body">
+      <div class="controls">
+        <div class="field">
+          <label for="bal">Cash on hand (US$)</label>
+          <div class="row"><input type="number" id="bal" value="12000" min="0" step="100"></div>
+        </div>
+        <div class="field">
+          <label for="burn">Monthly spend (US$)</label>
+          <div class="row">
+            <input type="range" id="burn" min="500" max="20000" step="100" value="4500">
+            <output id="burnOut">4,500</output>
+          </div>
+        </div>
+        <div class="field">
+          <label for="inc">Monthly income (US$)</label>
+          <div class="row">
+            <input type="range" id="inc" min="0" max="20000" step="100" value="1000">
+            <output id="incOut">1,000</output>
+          </div>
+        </div>
+      </div>
+      <div class="result">
+        <span class="k">Your runway</span>
+        <div class="runway-num" id="runwayNum">3.4<span>months</span></div>
+        <span class="status s-warn" id="status">Caution — under six months</span>
+        <div class="track"><i id="bar"></i></div>
+        <div class="track-cap" id="cap">Net burn US$ 3,500 / month</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <h2 class="sec reveal">Two scripts that tell you the <em>truth.</em></h2>
+  <p class="sec-lede reveal">No dashboards to log into, no spreadsheets to maintain. Drop the
+  files next to your money, run them, get a straight answer.</p>
+  <div class="grid">
+    <div class="card2 reveal">
+      <span class="n">01</span>
+      <h3>runway.py</h3>
+      <p>Give it your cash, your monthly cost and your income. It prints your
+      runway in days and months, and can Monte-Carlo your odds of surviving a
+      horizon when your income is irregular.</p>
+      <pre>$ python3 runway.py --cash 12000 \
+    --monthly-cost 4500 --monthly-income 1000
+  net / month:     -3,500.00
+  runway:          103 days (~3.4 months)</pre>
+    </div>
+    <div class="card2 reveal">
+      <span class="n">02</span>
+      <h3>subscriptions.py</h3>
+      <p>Point it at a CSV of transactions (date, description, amount). It groups
+      recurring charges, annualises them, and shows the yearly cost of every
+      subscription quietly eating your runway.</p>
+      <pre>$ python3 subscriptions.py --csv statement.csv
+  recurring services:  3
+  monthly total:       83.99
+  annualized:          1,007.88
+    - Cloud Storage: 39.00/mo (2x)</pre>
+    </div>
+    <div class="card2 reveal">
+      <span class="n">03</span>
+      <h3>No dependencies</h3>
+      <p>Plain Python 3, standard library only. Read every line before you run it.
+      Nothing phones home, nothing needs a key, and it runs on any machine you
+      already trust.</p>
+      <pre>$ python3 -c "import runway, subscriptions"
+(imports clean, stdlib only)</pre>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="sec reveal">Buy it in <em>three steps.</em></h2>
+  <p class="sec-lede reveal">No checkout account. Send the amount, the chain confirms it, the
+  files appear. That is the whole process.</p>
+  <div class="steps">
+    <div class="step reveal"><div class="idx"></div><div>
+      <h3>Send the payment</h3>
+      <p>Send US$ 19.00 worth of native coin, USDC or USDT to the address below, on Ethereum (ERC-20). Any of the three works.</p>
+    </div></div>
+    <div class="step reveal"><div class="idx"></div><div>
+      <h3>Wait for confirmation</h3>
+      <p>Once the transaction is confirmed on-chain it is picked up automatically. No code to send, no email to claim.</p>
+    </div></div>
+    <div class="step reveal"><div class="idx"></div><div>
+      <h3>Download the kit</h3>
+      <p>Your files are published at the delivery link and stay available there.</p>
+    </div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="checkout reveal" id="checkout">
+    <div class="checkout-head">
+      <h2>Checkout</h2>
+      <div class="bigprice">US$ 19.00<small>0.00812 native (~US$ 19.00)</small></div>
+    </div>
+    <div class="checkout-body">
+      <div class="co-col">
+        <p class="co-label">Pay with any of these</p>
+        <ul class="coins"><li class="coin"><span class="coin-tag">Native</span><span class="coin-amt">0.00812 native</span><span class="coin-note">the chain&#x27;s own coin</span></li><li class="coin"><span class="coin-tag">USDC</span><span class="coin-amt">19.00 USDC</span><span class="coin-note">ERC-20 · 6 decimals</span></li><li class="coin"><span class="coin-tag">USDT</span><span class="coin-amt">19.00 USDT</span><span class="coin-note">ERC-20 · 6 decimals</span></li></ul><p class="scan-hint">Scan with a wallet app, or tap to open it with the amount pre-filled.</p><div class="scans"><a class="scan" href="ethereum:0x2fb41C576DA136C712FD67d1E83355Afb7f03260@1?value=8120000000000000" aria-label="Pay 0.00812 native"><div class="qr"><svg width="164" height="164" class="segno"><g transform="scale(4)"><path fill="#fff" d="M0 0h41v41h-41z"/><path class="qrline" stroke="#0b0c0e" d="M2 2.5h7m4 0h1m1 0h1m2 0h1m1 0h1m2 0h4m3 0h1m1 0h7m-37 1h1m5 0h1m6 0h4m5 0h1m1 0h1m2 0h2m1 0h1m5 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h2m6 0h1m2 0h1m2 0h1m1 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h3m1 0h1m2 0h2m2 0h2m3 0h3m1 0h1m1 0h3m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m4 0h3m1 0h2m5 0h1m1 0h3m1 0h1m-37 1h1m5 0h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m4 0h2m2 0h1m5 0h1m-37 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-29 1h5m1 0h1m1 0h1m1 0h4m1 0h2m1 0h3m-29 1h1m1 0h5m5 0h1m5 0h1m1 0h1m4 0h1m1 0h2m1 0h5m-35 1h1m1 0h1m5 0h1m1 0h2m1 0h4m1 0h2m1 0h4m1 0h1m1 0h1m1 0h2m-32 1h1m2 0h2m1 0h2m5 0h2m3 0h1m5 0h2m1 0h1m6 0h3m-37 1h6m1 0h2m2 0h3m2 0h1m4 0h2m1 0h1m1 0h3m7 0h1m-34 1h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m5 0h1m4 0h1m2 0h1m1 0h7m-37 1h3m2 0h1m1 0h3m1 0h2m2 0h5m1 0h6m2 0h1m3 0h3m-35 1h4m1 0h1m3 0h2m1 0h5m3 0h1m4 0h2m2 0h2m1 0h1m2 0h1m-37 1h1m3 0h2m2 0h1m3 0h10m2 0h1m1 0h1m3 0h3m-33 1h1m1 0h7m1 0h3m1 0h3m3 0h1m4 0h1m1 0h1m2 0h5m1 0h1m-35 1h1m1 0h2m1 0h1m3 0h2m2 0h1m2 0h2m1 0h4m1 0h1m1 0h2m5 0h1m-36 1h3m1 0h5m1 0h1m2 0h1m1 0h2m5 0h1m1 0h1m1 0h3m1 0h1m1 0h5m-34 1h1m1 0h1m3 0h2m4 0h1m5 0h2m1 0h1m1 0h2m2 0h2m1 0h1m1 0h2m-36 1h2m3 0h1m5 0h7m1 0h1m4 0h1m1 0h1m1 0h2m1 0h1m1 0h3m-36 1h1m2 0h1m2 0h2m1 0h1m2 0h2m4 0h1m1 0h6m1 0h2m1 0h1m-31 1h1m1 0h1m1 0h3m2 0h1m1 0h1m1 0h3m1 0h1m2 0h1m5 0h1m2 0h2m3 0h2m-36 1h3m4 0h5m1 0h3m3 0h2m2 0h1m3 0h4m-32 1h2m2 0h9m2 0h1m2 0h1m1 0h1m4 0h1m1 0h1m2 0h3m1 0h3m-37 1h1m3 0h1m3 0h1m2 0h7m1 0h1m1 0h4m1 0h1m1 0h2m3 0h1m-34 1h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m5 0h1m2 0h1m2 0h4m4 0h2m1 0h2m-37 1h1m4 0h1m2 0h1m1 0h1m1 0h2m2 0h1m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h1m-37 1h1m2 0h5m2 0h3m1 0h1m1 0h3m5 0h2m1 0h6m1 0h2m-28 1h1m2 0h2m1 0h1m2 0h1m2 0h3m3 0h3m3 0h2m-34 1h7m4 0h3m1 0h3m3 0h1m2 0h1m3 0h1m1 0h1m1 0h5m-37 1h1m5 0h1m1 0h1m1 0h5m2 0h5m4 0h1m1 0h1m3 0h1m2 0h2m-37 1h1m1 0h3m1 0h1m1 0h1m1 0h7m3 0h1m4 0h1m1 0h8m1 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m2 0h1m2 0h2m2 0h2m1 0h4m1 0h3m1 0h4m2 0h1m-37 1h1m1 0h3m1 0h1m1 0h1m4 0h6m5 0h4m1 0h1m1 0h1m2 0h3m-37 1h1m5 0h1m2 0h2m1 0h2m1 0h1m5 0h1m1 0h2m3 0h2m1 0h1m1 0h1m2 0h1m-37 1h7m1 0h3m1 0h2m1 0h4m2 0h2m1 0h1m1 0h1m2 0h1m1 0h1m2 0h3"/></g></svg></div><span class="scan-tag">native</span><span class="scan-amt">0.00812 native</span></a><a class="scan" href="ethereum:0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48@1/transfer?address=0x2fb41C576DA136C712FD67d1E83355Afb7f03260&amp;uint256=19000000" aria-label="Pay 19.00 USDC"><div class="qr"><svg width="212" height="212" class="segno"><g transform="scale(4)"><path fill="#fff" d="M0 0h53v53h-53z"/><path class="qrline" stroke="#0b0c0e" d="M2 2.5h7m4 0h6m1 0h3m2 0h7m2 0h2m2 0h1m3 0h1m1 0h7m-49 1h1m5 0h1m6 0h1m2 0h2m3 0h1m6 0h1m1 0h4m2 0h1m1 0h3m1 0h1m5 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m3 0h1m3 0h2m1 0h3m2 0h1m2 0h1m2 0h1m5 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m1 0h1m4 0h1m1 0h2m3 0h2m1 0h2m4 0h1m1 0h5m1 0h1m2 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h4m3 0h12m3 0h2m1 0h1m3 0h1m4 0h1m1 0h3m1 0h1m-49 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h3m1 0h3m3 0h1m2 0h1m4 0h1m1 0h3m3 0h1m5 0h1m-49 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-41 1h2m2 0h3m3 0h3m1 0h1m3 0h5m1 0h1m1 0h1m2 0h1m1 0h1m-40 1h1m1 0h5m4 0h2m1 0h2m4 0h1m1 0h5m4 0h1m2 0h1m1 0h2m2 0h1m1 0h5m-47 1h1m2 0h2m2 0h1m2 0h3m2 0h4m8 0h1m1 0h4m2 0h3m1 0h1m2 0h2m-42 1h5m3 0h1m1 0h1m1 0h2m5 0h3m1 0h2m7 0h1m1 0h1m4 0h1m1 0h1m1 0h1m1 0h2m-49 1h1m4 0h1m1 0h1m2 0h2m3 0h2m1 0h1m2 0h1m3 0h1m1 0h6m2 0h1m3 0h7m1 0h2m-49 1h1m1 0h1m2 0h4m1 0h4m2 0h4m2 0h3m4 0h2m2 0h2m1 0h3m1 0h3m3 0h3m-49 1h2m2 0h2m2 0h1m2 0h1m3 0h3m3 0h1m1 0h1m1 0h1m1 0h2m1 0h1m1 0h1m3 0h1m2 0h1m1 0h7m-48 1h1m2 0h1m2 0h1m4 0h1m4 0h1m2 0h1m3 0h4m2 0h1m1 0h1m1 0h1m3 0h2m2 0h1m1 0h1m3 0h2m-49 1h1m3 0h1m3 0h3m1 0h2m2 0h2m3 0h1m1 0h1m6 0h2m1 0h1m1 0h1m3 0h1m2 0h3m2 0h2m-49 1h2m1 0h1m1 0h2m1 0h1m2 0h1m4 0h1m1 0h3m2 0h3m1 0h1m1 0h2m2 0h1m2 0h1m2 0h3m3 0h4m-49 1h2m2 0h1m2 0h2m2 0h2m1 0h1m8 0h1m1 0h1m4 0h2m1 0h1m2 0h1m5 0h2m-43 1h1m1 0h5m1 0h3m1 0h1m3 0h2m1 0h2m2 0h1m1 0h2m1 0h2m2 0h1m2 0h6m1 0h1m1 0h1m1 0h2m-49 1h2m2 0h2m1 0h2m1 0h5m1 0h1m2 0h1m1 0h1m1 0h1m4 0h1m1 0h6m2 0h1m2 0h2m1 0h1m2 0h2m-46 1h2m1 0h1m2 0h1m1 0h1m1 0h2m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m1 0h2m5 0h1m3 0h1m2 0h1m1 0h4m-49 1h1m1 0h2m1 0h1m1 0h3m1 0h1m5 0h1m1 0h1m2 0h3m5 0h1m2 0h1m1 0h3m1 0h1m1 0h2m1 0h2m1 0h1m-47 1h1m1 0h6m2 0h2m1 0h2m2 0h1m1 0h7m2 0h1m1 0h1m2 0h1m1 0h1m2 0h8m1 0h1m-49 1h1m3 0h1m3 0h4m4 0h2m4 0h1m3 0h7m2 0h1m4 0h1m3 0h2m-46 1h2m1 0h2m1 0h1m1 0h1m2 0h1m2 0h4m2 0h3m1 0h1m1 0h1m2 0h3m1 0h1m2 0h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m-49 1h1m1 0h3m3 0h1m1 0h1m1 0h1m1 0h1m2 0h3m1 0h2m3 0h1m2 0h2m1 0h1m3 0h1m3 0h1m3 0h2m2 0h1m-47 1h9m1 0h1m3 0h1m3 0h1m1 0h6m1 0h1m1 0h2m1 0h1m1 0h3m1 0h5m2 0h2m-48 1h3m1 0h1m1 0h2m2 0h4m1 0h3m2 0h2m1 0h2m2 0h1m2 0h2m2 0h1m1 0h1m4 0h1m4 0h2m-47 1h1m3 0h2m1 0h1m1 0h2m1 0h1m3 0h1m2 0h1m1 0h2m2 0h1m2 0h1m2 0h1m2 0h1m1 0h8m-46 1h2m2 0h2m7 0h2m3 0h4m2 0h2m2 0h1m1 0h4m3 0h1m1 0h1m6 0h1m-45 1h2m2 0h2m1 0h7m4 0h1m2 0h3m1 0h1m1 0h1m4 0h1m1 0h1m2 0h2m1 0h1m1 0h5m-49 1h1m2 0h1m1 0h1m2 0h2m2 0h2m2 0h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h1m4 0h2m5 0h1m-41 1h6m8 0h2m2 0h2m1 0h2m4 0h1m2 0h4m1 0h1m2 0h6m1 0h1m1 0h1m-48 1h1m2 0h1m2 0h1m1 0h3m3 0h2m7 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h1m1 0h2m2 0h3m-48 1h1m2 0h2m1 0h2m1 0h3m3 0h4m1 0h3m2 0h1m2 0h1m1 0h4m2 0h8m1 0h1m1 0h2m-48 1h1m1 0h1m4 0h1m2 0h1m1 0h1m1 0h1m1 0h1m3 0h1m2 0h1m1 0h1m1 0h1m3 0h4m7 0h1m-42 1h5m1 0h3m1 0h3m2 0h7m1 0h1m1 0h1m2 0h2m4 0h2m1 0h1m1 0h2m2 0h4m-48 1h2m1 0h1m2 0h1m3 0h2m3 0h3m2 0h1m1 0h2m1 0h1m1 0h6m1 0h1m3 0h1m3 0h1m1 0h1m-45 1h1m3 0h2m1 0h1m2 0h2m2 0h2m1 0h1m3 0h4m1 0h1m3 0h1m2 0h7m1 0h4m1 0h2m-48 1h3m4 0h2m1 0h2m2 0h2m1 0h1m1 0h2m1 0h2m1 0h3m1 0h1m1 0h2m2 0h2m3 0h1m-42 1h3m3 0h1m2 0h1m4 0h1m2 0h10m4 0h1m1 0h4m2 0h10m-41 1h7m3 0h1m2 0h2m3 0h1m1 0h1m1 0h2m4 0h1m3 0h1m3 0h2m1 0h1m-48 1h7m2 0h3m1 0h3m1 0h3m1 0h2m1 0h1m1 0h1m1 0h2m3 0h2m2 0h4m1 0h1m1 0h1m1 0h1m1 0h1m-49 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h2m3 0h2m3 0h1m1 0h1m1 0h1m1 0h1m7 0h1m3 0h2m1 0h2m-49 1h1m1 0h3m1 0h1m1 0h1m1 0h1m5 0h4m2 0h6m1 0h1m1 0h1m1 0h6m1 0h5m1 0h3m-49 1h1m1 0h3m1 0h1m1 0h2m8 0h1m3 0h2m1 0h4m1 0h2m1 0h1m2 0h1m3 0h5m3 0h1m-49 1h1m1 0h3m1 0h1m1 0h3m2 0h2m1 0h4m1 0h1m2 0h1m1 0h2m1 0h1m4 0h1m1 0h4m2 0h2m1 0h1m-46 1h1m5 0h1m2 0h2m2 0h3m1 0h2m3 0h1m1 0h3m3 0h2m1 0h1m1 0h1m5 0h3m1 0h1m2 0h1m-49 1h7m1 0h1m1 0h2m3 0h1m1 0h1m1 0h3m1 0h2m2 0h1m1 0h2m5 0h1m3 0h1m1 0h2m2 0h3"/></g></svg></div><span class="scan-tag">USDC</span><span class="scan-amt">19.00 USDC</span></a><a class="scan" href="ethereum:0xdAC17F958D2ee523a2206206994597C13D831ec7@1/transfer?address=0x2fb41C576DA136C712FD67d1E83355Afb7f03260&amp;uint256=19000000" aria-label="Pay 19.00 USDT"><div class="qr"><svg width="212" height="212" class="segno"><g transform="scale(4)"><path fill="#fff" d="M0 0h53v53h-53z"/><path class="qrline" stroke="#0b0c0e" d="M2 2.5h7m3 0h8m1 0h1m1 0h1m3 0h5m2 0h2m2 0h1m3 0h1m1 0h7m-49 1h1m5 0h1m3 0h3m6 0h2m1 0h3m3 0h1m1 0h4m2 0h1m1 0h3m1 0h1m5 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h1m1 0h2m2 0h1m2 0h1m2 0h1m5 0h1m2 0h2m1 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h3m4 0h1m1 0h2m3 0h2m1 0h1m5 0h1m2 0h4m1 0h1m2 0h1m1 0h3m1 0h1m-49 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h3m1 0h8m2 0h3m5 0h1m4 0h1m1 0h3m1 0h1m-49 1h1m5 0h1m1 0h2m1 0h1m1 0h2m1 0h3m1 0h3m3 0h1m6 0h1m2 0h3m3 0h1m5 0h1m-49 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-41 1h2m2 0h3m3 0h3m1 0h1m3 0h5m1 0h1m1 0h1m4 0h1m-40 1h1m1 0h5m4 0h2m1 0h2m4 0h1m1 0h5m4 0h1m2 0h1m1 0h2m2 0h1m1 0h5m-47 1h3m1 0h1m2 0h1m2 0h3m2 0h4m8 0h1m1 0h4m2 0h3m1 0h1m2 0h2m3 0h1m-48 1h1m1 0h1m1 0h3m3 0h1m1 0h1m1 0h2m5 0h3m1 0h2m7 0h1m1 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m-48 1h2m1 0h2m1 0h1m2 0h2m3 0h2m1 0h1m2 0h1m3 0h1m1 0h6m2 0h1m3 0h7m1 0h2m-49 1h3m1 0h5m1 0h2m1 0h1m1 0h1m1 0h3m2 0h3m4 0h2m2 0h2m1 0h3m1 0h3m3 0h3m-48 1h1m6 0h1m6 0h3m3 0h1m1 0h1m1 0h1m2 0h1m1 0h1m4 0h2m2 0h1m1 0h7m-48 1h1m2 0h2m1 0h1m4 0h1m2 0h1m1 0h1m1 0h2m3 0h5m1 0h1m1 0h1m1 0h1m2 0h3m2 0h1m1 0h1m3 0h2m-49 1h1m3 0h2m6 0h1m1 0h1m2 0h1m3 0h1m1 0h1m6 0h2m1 0h1m1 0h1m3 0h1m2 0h3m2 0h2m-49 1h2m1 0h1m1 0h2m2 0h3m3 0h1m1 0h4m2 0h3m1 0h1m1 0h2m2 0h1m2 0h1m3 0h2m3 0h4m-49 1h2m2 0h1m3 0h1m2 0h2m1 0h1m2 0h2m2 0h1m1 0h1m1 0h1m4 0h2m1 0h1m2 0h1m2 0h1m1 0h3m-43 1h1m1 0h4m1 0h9m3 0h3m1 0h1m1 0h2m1 0h2m2 0h1m2 0h3m1 0h1m1 0h1m2 0h1m1 0h2m-49 1h2m2 0h2m2 0h2m3 0h1m1 0h2m2 0h1m1 0h1m1 0h1m4 0h5m2 0h1m2 0h2m1 0h2m1 0h1m2 0h2m-45 1h1m1 0h1m1 0h2m1 0h1m4 0h1m3 0h1m1 0h1m1 0h2m1 0h1m1 0h2m2 0h2m1 0h1m3 0h1m2 0h1m1 0h4m-49 1h1m1 0h2m1 0h1m3 0h1m1 0h1m5 0h3m2 0h1m1 0h1m4 0h2m2 0h1m1 0h3m1 0h1m1 0h2m1 0h4m-48 1h1m1 0h1m1 0h5m2 0h2m1 0h2m2 0h1m1 0h7m4 0h1m2 0h1m1 0h1m1 0h7m3 0h1m-49 1h5m3 0h4m4 0h2m4 0h1m3 0h7m2 0h1m1 0h1m2 0h1m3 0h2m-46 1h1m1 0h1m1 0h1m1 0h1m1 0h1m2 0h1m2 0h4m1 0h4m1 0h1m1 0h1m2 0h3m1 0h1m2 0h2m1 0h2m1 0h1m1 0h1m1 0h1m1 0h1m-49 1h2m2 0h1m3 0h1m1 0h1m1 0h1m1 0h1m2 0h2m2 0h2m3 0h1m2 0h2m1 0h1m3 0h2m2 0h1m3 0h2m1 0h1m-48 1h2m1 0h8m1 0h1m3 0h1m2 0h1m2 0h6m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m1 0h5m3 0h1m-49 1h2m1 0h1m1 0h1m2 0h1m2 0h4m1 0h3m1 0h3m1 0h2m2 0h1m6 0h1m1 0h1m4 0h1m5 0h1m-49 1h1m1 0h1m3 0h2m1 0h1m2 0h1m1 0h2m2 0h1m2 0h1m1 0h2m2 0h1m2 0h2m1 0h1m2 0h1m1 0h8m1 0h2m-49 1h1m3 0h2m6 0h4m2 0h4m2 0h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m6 0h1m-45 1h2m2 0h2m1 0h2m2 0h1m4 0h1m1 0h1m2 0h2m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m2 0h2m1 0h1m1 0h5m-49 1h1m2 0h1m1 0h1m2 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m1 0h4m1 0h1m4 0h2m5 0h1m-41 1h4m1 0h1m4 0h1m3 0h2m1 0h3m1 0h2m4 0h1m2 0h4m1 0h1m2 0h6m1 0h1m1 0h1m-48 1h1m2 0h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h3m5 0h1m1 0h4m2 0h1m1 0h1m1 0h1m2 0h1m1 0h2m2 0h3m-48 1h1m2 0h1m2 0h2m4 0h1m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m2 0h1m1 0h4m2 0h8m1 0h1m1 0h2m-48 1h1m1 0h2m3 0h1m1 0h1m2 0h2m3 0h1m2 0h1m2 0h1m1 0h1m1 0h3m1 0h4m1 0h1m5 0h1m-41 1h1m2 0h5m1 0h1m6 0h3m1 0h1m1 0h1m1 0h1m1 0h3m4 0h1m2 0h1m1 0h8m-48 1h2m1 0h1m4 0h4m3 0h3m2 0h1m1 0h2m1 0h1m1 0h1m1 0h4m1 0h1m1 0h1m1 0h1m2 0h1m-42 1h1m3 0h3m3 0h2m2 0h2m1 0h1m4 0h3m1 0h1m1 0h1m1 0h1m2 0h3m3 0h1m1 0h3m1 0h3m-48 1h3m4 0h2m1 0h2m2 0h2m1 0h1m1 0h5m1 0h3m1 0h1m1 0h2m2 0h1m4 0h1m-42 1h3m3 0h1m1 0h2m4 0h1m2 0h10m4 0h1m1 0h13m1 0h2m-41 1h7m3 0h1m2 0h2m3 0h1m1 0h1m1 0h2m3 0h1m4 0h1m3 0h2m1 0h1m-48 1h7m2 0h3m1 0h3m1 0h2m1 0h3m1 0h1m1 0h1m1 0h2m3 0h8m1 0h1m1 0h1m1 0h1m1 0h1m-49 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h2m1 0h1m1 0h2m3 0h1m1 0h1m1 0h3m3 0h1m3 0h1m3 0h2m1 0h2m-49 1h1m1 0h3m1 0h1m1 0h1m1 0h2m3 0h1m1 0h3m2 0h6m1 0h1m3 0h6m1 0h5m1 0h1m-47 1h1m1 0h3m1 0h1m1 0h2m1 0h2m5 0h1m3 0h2m1 0h2m3 0h2m1 0h1m1 0h2m3 0h5m3 0h1m-49 1h1m1 0h3m1 0h1m1 0h1m5 0h1m3 0h2m1 0h1m2 0h1m1 0h1m2 0h1m1 0h1m2 0h1m1 0h4m2 0h2m1 0h1m-46 1h1m5 0h1m2 0h5m1 0h3m4 0h1m2 0h2m3 0h2m1 0h1m1 0h1m5 0h3m1 0h1m2 0h1m-49 1h7m1 0h1m1 0h1m1 0h1m3 0h1m1 0h4m2 0h1m2 0h1m1 0h2m5 0h1m3 0h1m1 0h2m2 0h3"/></g></svg></div><span class="scan-tag">USDT</span><span class="scan-amt">19.00 USDT</span></a></div>
+        <p class="co-label" style="margin-top:22px">Payment address · Ethereum (ERC-20)</p>
+        <div class="addrbox">
+          <code id="addr">0x2fb41C576DA136C712FD67d1E83355Afb7f03260</code>
+          <button class="copy" id="copyBtn" type="button">copy</button>
+        </div>
+      </div>
+      <div class="co-col">
+        <p class="co-label">After payment</p>
+        <p>When the payment confirms on-chain, your files appear at:</p><p class="deliv-url"><a href="https://work-1-arxrvgrjuqydeqtz.prod-runtime.all-hands.dev/deliveries/runway---burn-kit/">https://work-1-arxrvgrjuqydeqtz.prod-runtime.all-hands.dev/deliveries/runway---burn-kit/</a></p><p class="muted">Automatic delivery, usually within a few minutes.</p>
+        <p class="muted" style="font-size:13.5px;margin-top:18px">Send the exact amount. If you
+        send a little more, the order is still fulfilled; a little less will not clear the price.</p>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="sec reveal">Questions, <em>answered.</em></h2>
+  <div class="faq">
+    <details class="reveal"><summary>Which network do I pay on?</summary>
+      <p>Ethereum (ERC-20). The address above is an Ethereum address; send on Ethereum mainnet only.
+      Native ETH, USDC or USDT are all accepted.</p></details>
+    <details class="reveal"><summary>What exactly do I receive?</summary>
+      <p>Two Python 3 scripts — <code>runway.py</code> and <code>subscriptions.py</code> — plus a
+      short README. They are plain files with no dependencies, yours to keep and read.</p></details>
+    <details class="reveal"><summary>How does delivery work?</summary>
+      <p>A watcher checks the address on-chain. When your payment confirms, the files are
+      published to the delivery link above automatically. There is no account and no email.</p></details>
+    <details class="reveal"><summary>Is this a subscription?</summary>
+      <p>No. It is a one-time payment for the files. Nothing renews and nothing is charged again.</p></details>
+  </div>
+</div></section>
+
+<footer><div class="wrap" style="display:flex;justify-content:space-between;width:100%;flex-wrap:wrap;gap:16px">
+  <span>© 2026 Runway&amp;Burn · digital goods, delivered on-chain</span>
+  <span>US$ 19.00 · Ethereum (ERC-20)</span>
+</div></footer>
+
+<script>
+(function(){
+  var bal=document.getElementById('bal'),burn=document.getElementById('burn'),inc=document.getElementById('inc');
+  var burnOut=document.getElementById('burnOut'),incOut=document.getElementById('incOut');
+  var num=document.getElementById('runwayNum'),status=document.getElementById('status'),bar=document.getElementById('bar'),cap=document.getElementById('cap');
+  function fmt(n){return n.toLocaleString('en-US')}
+  function calc(){
+    var b=Math.max(0,parseFloat(bal.value)||0), s=parseFloat(burn.value)||0, i=parseFloat(inc.value)||0;
+    burnOut.textContent=fmt(s); incOut.textContent=fmt(i);
+    var net=s-i;
+    if(net<=0){
+      num.innerHTML='&infin;<span>months</span>';
+      status.className='status s-good'; status.textContent='Cash-flow positive — the balance stops shrinking';
+      bar.style.width='100%'; cap.textContent='Net burn US$ 0 / month';
+      return;
+    }
+    var months=b/net;
+    var years=Math.floor(months/12), rem=months-years*12;
+    var label = months>=12 ? (years+'y '+rem.toFixed(1)+'<span>mo</span>') : (months.toFixed(1)+'<span>months</span>');
+    num.innerHTML=label;
+    var cls,txt;
+    if(months<3){cls='s-bad';txt='Danger — under three months of runway';}
+    else if(months<6){cls='s-warn';txt='Caution — under six months';}
+    else if(months<12){cls='s-warn';txt='Okay — under a year';}
+    else {cls='s-good';txt='Healthy — a year or more';}
+    status.className='status '+cls; status.textContent=txt;
+    bar.style.width=Math.max(3,Math.min(100,(months/24)*100))+'%';
+    cap.textContent='Net burn US$ '+fmt(Math.round(net))+' / month';
+  }
+  [bal,burn,inc].forEach(function(el){el.addEventListener('input',calc)});
+  calc();
+
+  var copy=document.getElementById('copyBtn');
+  if(copy){copy.addEventListener('click',function(){
+    var t=document.getElementById('addr').textContent.trim();
+    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){
+      copy.textContent='copied ✓'; setTimeout(function(){copy.textContent='copy'},1600);
+    }).catch(function(){copy.textContent='select ↑';});
+  });}
+
+  var share=document.getElementById('shareBtn');
+  if(share){share.addEventListener('click',function(){
+    var url=window.location.href, title=document.title;
+    var data={title:title,text:'Two dependency-free tools to see how long your money lasts.',url:url};
+    function done(){share.textContent='link copied ✓'; setTimeout(function(){share.textContent='Share this'},1600);}
+    if(navigator.share){navigator.share(data).catch(function(){});}
+    else if(navigator.clipboard){navigator.clipboard.writeText(url).then(done).catch(function(){});}
+  });}
+
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  } else { document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')}); }
+})();
+</script>
+</body></html>
